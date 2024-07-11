@@ -1,21 +1,24 @@
 {
-  "name": "project",
-  "version": "1.0.0",
+  "name": "gulp-build",
+  "version": "2.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "gulp",
+    "start": "gulp dev",
     "html": "gulp html",
-    "pug": "gulp pug",
     "style": "gulp style",
     "script": "gulp script",
-    "favicon": "node ./tasks/favicon.js",
+    "script-production": "gulp script --production",
+    "clean": "gulp clean",
+    "clean-build": "gulp cleanBuild",
     "dev": "gulp dev",
-    "build": "gulp reliase",
-    "build-production": "gulp reliase --production"
+    "watch": "gulp watch",
+    "build": "gulp build",
+    "reliase": "gulp reliase",
+    "reliase-production": "gulp reliase --production"
   },
   "author": "",
-  "license": "ISC",
+  "license": "",
   "browserslist": [
     "last 40 versions"
   ],
@@ -28,12 +31,12 @@
     "@babel/core": "^7.22.9",
     "@babel/preset-env": "^7.22.9",
     "browser-sync": "^2.29.3",
+    "del": "^6.1.1",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^8.0.0",
     "gulp-babel": "^8.0.0",
     "gulp-clean": "^0.4.0",
     "gulp-csso": "^4.0.1",
-    "gulp-file-include": "^2.3.0",
     "gulp-fonter": "^0.3.0",
     "gulp-group-css-media-queries": "^1.2.2",
     "gulp-if": "^3.0.0",
@@ -51,10 +54,8 @@
   },
   "dependencies": {
     "gulp-avif": "^1.1.1",
-    "gulp-favicons": "^3.0.0",
     "gulp-filter": "^7.0.0",
     "gulp-htmlmin": "^5.0.1",
-    "gulp-rename": "^2.0.0",
-    "sharp": "^0.32.4"
+    "gulp-rename": "^2.0.0"
   }
 }
