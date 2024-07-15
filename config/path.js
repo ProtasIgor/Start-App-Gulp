@@ -7,7 +7,7 @@ const path = {
 
     html: {
         src: pathBaseSource + `index.html`,
-        watch: `index.html`,
+        watch: pathBaseSource + `index.html`,
         dest: pathBaseSource,
     },
     style: {
